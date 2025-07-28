@@ -17,6 +17,11 @@ gap: 30px;
  font-size: 20px; 
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+#header a{
+    text-decoration: none;
+    color: rgb(86, 70, 70);
+    font-weight: bold;
+}
 /*======================================================INSERT PAGE========================================================================================*/
 .h2{
     text-align: center;

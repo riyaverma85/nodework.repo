@@ -9,20 +9,21 @@
 </head>
 
 <body bgcolor="white">
-    <div style="background-color: rgb(176, 111, 111); width: 100%; height: 50px; display: flex; justify-content: center; align-items: center; gap: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; ">
-    <a href="/" style="text-decoration: none;">Home</a>
-    <a href="/insert" style="text-decoration: none;">Insert</a>
-    <a href="/display" style="text-decoration: none;">Display</a>
-    <a href="/update" style="text-decoration: none;">Update</a>
-    <a href="/search" style="text-decoration: none;">Search</a>
+    <div id="header">
+    <a href="/">Home</a>
+    <a href="/insert" >Insert</a>
+    <a href="/display" >Display</a>
+    <a href="/update" >Update</a>
+    <a href="/search" >Search</a>
     </div>
     <hr>
     <h2 align="center" class="h2">Data insert page</h2>
-    <form action="" method="post" id="form">
-        Enter Name: <input type="text" name="name"><br/><br/>
-        Enter City: <input type="text" name="city"><br/><br/>
-        Enter Post: <input type="text" name="post"><br/><br/>
-        Enter Salary: <input type="text" name="salary"><br/><br/>
+
+    <form action="/save" method="post" id="form">
+        Enter Name: <input type="text" name="nm"><br/><br/>
+        Enter City: <input type="text" name="ct"><br/><br/>
+        Enter Post: <input type="text" name="pst"><br/><br/>
+        Enter Salary: <input type="text" name="sal"><br/><br/>
         <button>Save</button>
     </form>
 </body>

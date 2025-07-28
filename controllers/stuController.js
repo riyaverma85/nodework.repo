@@ -7,14 +7,14 @@ const insertpage=(req,res)=>{
     res.render("insert");
 }
 const stuSave=async(req,res)=>{
-    const {name,city,post,salary}=req.body;
-    const stuData= await stuModel.create({
-        name:name,
-        city:city,
-        post:post,
-        salary:salary
+    const {nm,ct,pst,sal}=req.body;
+    const stuData=await stuModel.create({
+        name:nm,
+        city:ct,
+        post:pst,
+        salary:sal
     })
-    console.log(req.body);
+    console.log(req.body)
     res.render("insert")
 }
 
