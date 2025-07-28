@@ -1,9 +1,11 @@
 
 const express=require("express");
 const app=express();
+
 const stuRoute=require("./Routes/stuRoutes");
 app.set("view engine","ejs");
 app.use("/", stuRoute);
+app.use(express.static("./public"));
 
 
 app.listen(4000,()=>{
